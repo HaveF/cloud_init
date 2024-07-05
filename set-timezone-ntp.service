@@ -1,0 +1,11 @@
+[Unit]
+Description=Set Timezone to Asia/Shanghai and Enable NTP
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set-timezone-ntp.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+
